@@ -30,7 +30,7 @@ app.add_middleware(
 
 # Database Configuration (Replace with your DB credentials)
 # DATABASE_URL = "postgresql://neondb_owner:npg_waTG4VbY3KsJ@ep-solitary-field-a8mj30kp-pooler.eastus2.azure.neon.tech/neondb?sslmode=require"
-DATABASE_URL = "postgresql://neondb_owner:npg_tqQ57UlGjvNO@ep-ancient-base-a1tmbt57-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&channelBinding=require"
+DATABASE_URL = "postgresql://neondb_owner:npg_tqQ57UlGjvNO@ep-ancient-base-a1tmbt57-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require"
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
